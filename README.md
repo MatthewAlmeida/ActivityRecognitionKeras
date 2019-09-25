@@ -35,5 +35,5 @@ docker build --tag matthewalmeida/activityrecognitionkeras .
 to build the image, and run with:
 
 ```
-docker run -u $(id -u):$(id -g) --rm --runtime=nvidia matthewalmeida/activityrecognitionkeras
+docker run --rm --runtime=nvidia matthewalmeida/activityrecognitionkeras
 ```
