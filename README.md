@@ -21,3 +21,19 @@ Smith, Leslie N. "A disciplined approach to neural network hyper-parameters: Par
 </blockquote>
 
 Results are reported with accuracy, precision and recall by class, and confusion matrices.
+
+-----
+
+# To run
+
+Requirements are effectively the same as those to run the base docker image ```tensorflow/tensorflow:1.14.0-gpu-py3```, namely cuda > 10.0. If this requirement is met, then use:
+
+```
+docker build --tag matthewalmeida/activityrecognitionkeras .
+```
+
+to build the image, and run with:
+
+```
+docker run -u $(id -u):$(id -g) --rm --runtime=nvidia matthewalmeida/activityrecognitionkeras
+```
