@@ -2,10 +2,10 @@ import os
 import numpy as np
 import math
 
-import keras
-import keras.backend as K
-from keras.optimizers import SGD
-from keras.callbacks import LearningRateScheduler, EarlyStopping, Callback
+import tensorflow as tf
+
+from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.callbacks import LearningRateScheduler, EarlyStopping, Callback
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report

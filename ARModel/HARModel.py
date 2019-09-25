@@ -1,7 +1,7 @@
-from keras import models
-from keras import regularizers
-from keras import layers
-from keras.models import Sequential
+from tensorflow.keras import models
+from tensorflow.keras import regularizers
+from tensorflow.keras import layers
+from tensorflow.keras.models import Sequential
 
 def HARModel(
             batch_size = 128,
