@@ -26,7 +26,7 @@ Results are reported with accuracy, precision and recall by class, and confusion
 
 # To run
 
-Requirements are effectively the same as those to run the base docker image ```tensorflow/tensorflow:1.14.0-gpu-py3```, namely cuda > 10.0. If this requirement is met, then use:
+Requirements are effectively the same as those to run the base docker image ```tensorflow/tensorflow:1.14.0-gpu-py3```. For GPU computation, requires cuda > 10.0. If this requirement is met, then use:
 
 ```
 docker build --tag matthewalmeida/activityrecognitionkeras .
@@ -36,4 +36,6 @@ to build the image, and run with:
 
 ```
 docker run --rm --runtime=nvidia matthewalmeida/activityrecognitionkeras
-```
+```.
+
+To run on CPU, simply remove ```--runtime=nvidia``` from the docker run command.
