@@ -36,6 +36,6 @@ to build the image, and run with:
 
 ```
 docker run --rm --runtime=nvidia matthewalmeida/activityrecognitionkeras
-```.
+```
 
 To run on CPU, simply remove ```--runtime=nvidia``` from the docker run command.
